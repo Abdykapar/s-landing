@@ -1,5 +1,10 @@
 .aside {
   margin-top: 140px;
+  margin-right: 60px;
+}
+
+.hero > img {
+  width: 100%;
 }
 
 .menu {
@@ -24,5 +29,63 @@
 
   &__item > a:hover {
     opacity: 0.7;
+  }
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin-top: 68px;
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 62px;
+  }
+
+  &__item {
+    width: 405px;
+    height: 448px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: $primary;
+    }
+
+    &__desc {
+      color: $white;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      margin-top: 13px;
+    }
+
+    &__footer {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 3.6%,
+        rgba(0, 0, 0, 0.79) 77%
+      );
+      border-radius: 15px;
+      padding: 60px 28px 40px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 58px;
   }
 }
