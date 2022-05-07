@@ -1,0 +1,28 @@
+.aside {
+  margin-top: 140px;
+}
+
+.menu {
+  list-style: none;
+  &__item > a {
+    color: $black;
+    text-decoration: none;
+    padding: 8px 5px 8px 33px;
+    border: 0.74961px solid #c4c4c4;
+    width: 243px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: block;
+  }
+
+  &__item.active > a {
+    background-color: $primary;
+    font-weight: 600;
+    color: $white;
+  }
+
+  &__item > a:hover {
+    opacity: 0.7;
+  }
+}
