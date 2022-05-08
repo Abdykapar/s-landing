@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Raleway:wght@300;400;500;600;700&display=swap');
 
+@import './normalize';
 @import './variables';
 @import './header';
 @import './layouts';
 @import './home';
 @import './aside';
 @import './footer';
+@import './swiper';
 
 * {
   margin: 0;
@@ -24,4 +26,18 @@ a {
 
 ul {
   list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }

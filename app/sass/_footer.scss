@@ -60,10 +60,31 @@
   background-color: $black;
   height: 54px;
   padding-left: 20%;
+  padding-right: 20%;
   font-weight: 300;
   font-size: 11px;
   line-height: 14px;
   color: $white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 19px;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    background: #dadada;
+    color: $black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2px;
+    padding-left: 1px;
+  }
 }

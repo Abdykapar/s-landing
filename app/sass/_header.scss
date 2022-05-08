@@ -82,3 +82,16 @@
     }
   }
 }
+
+.home .header {
+  &_main__menu-item {
+    color: $white;
+  }
+  &_main__content {
+    color: $white;
+  }
+  &_main {
+    position: relative;
+    z-index: 2;
+  }
+}

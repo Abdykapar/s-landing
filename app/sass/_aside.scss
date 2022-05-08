@@ -7,13 +7,97 @@
   width: 100%;
 }
 
+.home .hero {
+  margin-top: -94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url('../img/rectangle.svg');
+    bottom: 90px;
+    position: absolute;
+    z-index: 2;
+    width: 90px;
+    height: 91px;
+    right: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.39);
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 18.1434px;
+    line-height: 138.3%;
+    color: $white;
+    margin: 10px 0 51px;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 57px;
+    color: $white;
+    margin: 25% 0 0;
+  }
+
+  &__btn {
+    background: #5798ff;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 8px;
+    min-width: 149px;
+    border: none;
+    color: $white;
+    cursor: pointer;
+
+    &.yellow {
+      background: #ffc93c;
+      margin-left: 54px;
+    }
+  }
+}
+
 .menu {
   list-style: none;
   &__item > a {
     color: $black;
     text-decoration: none;
     padding: 8px 5px 8px 33px;
-    border: 0.74961px solid #c4c4c4;
+    border-bottom: 0.74961px solid #c4c4c4;
+    border-right: 0.74961px solid #c4c4c4;
+    border-left: 0.74961px solid #c4c4c4;
     width: 243px;
     font-weight: 300;
     font-size: 18px;
@@ -28,9 +112,10 @@
   }
 
   &__item > a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
+
 .team {
   display: flex;
   flex-direction: column;
@@ -87,5 +172,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 58px;
+
+    &.x3 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 23px;
+    }
+  }
+}
+
+.our-team {
+  .team__item {
+    filter: drop-shadow(7.55976px 7.55976px 34.0189px rgba(0, 0, 0, 0.1));
   }
 }
