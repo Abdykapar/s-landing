@@ -1,0 +1,51 @@
+.team-d {
+  margin-top: 45px;
+
+  &__title {
+    font-weight: 800;
+    font-size: 33.1487px;
+    line-height: 39px;
+    color: $primary;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 22.0991px;
+    line-height: 26px;
+    text-align: justify;
+    margin-right: 51px;
+  }
+
+  &__p {
+    font-weight: 400;
+    font-size: 22.0991px;
+    line-height: 26px;
+    margin-top: 17px;
+  }
+
+  &__sub-t {
+    font-size: 22.0991px;
+    line-height: 26px;
+  }
+
+  &__list {
+    font-weight: 400;
+    font-size: 22.0991px;
+    line-height: 26px;
+    margin-top: 10px;
+    * + * {
+      margin-top: 10px;
+    }
+  }
+}
+
+.team-detail {
+  .main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    column-gap: 25px;
+  }
+}
