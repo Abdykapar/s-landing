@@ -20,18 +20,7 @@ function cleanDist() {
 }
 
 function images() {
-  return src('app/img/**/*')
-    .pipe(
-      imagemin([
-        imagemin.gifsicle({ interlaced: true }),
-        imagemin.mozjpeg({ quality: 75, progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
-        imagemin.svgo({
-          plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
-        }),
-      ])
-    )
-    .pipe(dest('dist/img'))
+  return src('app/img/**/*').pipe(dest('dist/img'))
 }
 
 function scripts() {
@@ -69,8 +58,6 @@ function build() {
       'app/fonts/**/*',
       'app/js/main.min.js',
       'app/*.html',
-      'app/video/*.mp4',
-      'app/audio/audio.mp3',
     ],
     { base: 'app' }
   ).pipe(dest('dist'))
