@@ -1,0 +1,49 @@
+.student-life {
+  .card {
+    display: flex;
+
+    &__detail {
+      margin-left: 42px;
+    }
+
+    &__name {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 42px;
+      color: #383838;
+    }
+
+    &__position {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      color: #a8a8a8;
+      margin-top: 13px;
+    }
+
+    &__text {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 38px;
+      color: #383838;
+      margin-top: 38px;
+    }
+  }
+
+  .content {
+    > * + * {
+      margin-top: 46px;
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 13px;
+
+    &-title {
+      margin-top: 67px;
+    }
+  }
+}
